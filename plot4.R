@@ -11,7 +11,7 @@ hpc <- cbind(hpc, DateTime)
 png(filename = "plot4.png", width = 480, height = 480)       ## opening PNG graphic device
 par(mfcol = c(2, 2))                                         ## setting plot array layout
 # plotting Global Active Power x Time
-plot(hpc$DateTime, hpc$Global_active_power, type ="n",ylab="Global Active Power (kilowatts)", xlab="")
+plot(hpc$DateTime, hpc$Global_active_power, type ="n",ylab="Global Active Power", xlab="")
 lines(hpc$DateTime, hpc$Global_active_power)
 # plotting Energy Sub Meter x Time
 plot(hpc$DateTime, hpc$Sub_metering_1, type = "n", ylab =
